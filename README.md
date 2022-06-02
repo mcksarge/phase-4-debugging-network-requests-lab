@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: "Toys" was flagged as un recognized, corrected spelling.
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: Noticed :ID wasn't a permitted parameter in the server logs, then saw 500 error because json data wasn't being returned.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: Saw 404 error, route for DELETE was missing, added :destroy route.
